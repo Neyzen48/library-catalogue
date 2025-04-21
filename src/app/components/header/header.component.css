@@ -1,0 +1,61 @@
+:host {
+  width: calc(100% - 16px);
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  height: 64px;
+  background: var(--color-background-tile);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  margin-top: 8px;
+  padding: 0 8px;
+}
+
+:host > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  --logo-size: 48px;
+  font-size: var(--logo-size);
+  width: var(--logo-size);
+  height: var(--logo-size);
+  color: var(--color-primary);
+}
+
+.leading {
+  justify-content: flex-start;
+  gap: 16px;
+  flex: 1
+}
+
+.center {
+  justify-content: center;
+  flex: 0
+}
+
+.trailing {
+  justify-content: flex-end;
+}
+
+.title {
+  font-size: 20pt;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 10pt;
+  font-weight: 400;
+  color: var(--color-text-light);
+}
+
+.action-button {
+  color: var(--color-text) !important;
+  font-family: var(--font-primary), sans-serif !important;
+  font-size: 14pt !important;
+}
