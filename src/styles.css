@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+:root {
+  --color-background-tile: #ffffff;
+  --color-background-page: #f0faff;
+  --color-surface: #f5f5f5;
+  --color-primary: #4a90e2;
+  --color-primary-variant: #357ABD;
+  --color-secondary: #f39c12;
+  --color-secondary-variant: #d68910;
+  --color-text: #505050;
+  --color-text-light: #7f8c8d;
+  --color-text-inverse: #ecf0f1;
+  --color-border: #dcdcdc;
+  --color-accent: #e74c3c;
+  --image-background: url("../public/res/background/img.png");
+  --font-primary: Rubik, "Helvetica Neue";
+}
+
+[data-theme='dark'] {
+  --color-background: #121212;
+  --color-surface: #1e1e1e;
+  --color-primary: #4a90e2;
+  --color-primary-variant: #5dade2;
+  --color-secondary: #f39c12;
+  --color-secondary-variant: #f5b041;
+  --color-text: #ecf0f1;
+  --color-text-light: #bdc3c7;
+  --color-border: #2c3e50;
+  --color-accent: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: var(--image-background);
+  background-size: 512px;
+  font-family: var(--font-primary), sans-serif;
+}
+
+* {
+  /* border: 1px inset red !important; */
+}
